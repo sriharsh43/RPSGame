@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  Rock Paper Scissors Game
+Introduction
+In this code example, we have a JavaScript implementation of the classic game "Rock Paper Scissors". The game allows the user to select one of the three
+    options (rock, paper, or scissors) and play against the computer. The code keeps track of the user's score, the
+    computer's score, and displays the outcome of each round.
+
+    Key Concepts
+    Variables: The code uses variables to store the user's score (userScore) and the computer's score (compScore).
+    DOM Manipulation: The code interacts with the Document Object Model (DOM) to select HTML elements and update their
+    content. It uses querySelector and querySelectorAll to select elements by their CSS selectors
+    and innerText to update the text content of elements.
+    Event Listeners: The code adds event listeners to the choices (rock, paper, and scissors) to detect when the user
+    clicks on a choice. When a choice is clicked, the playGame function is called with the selected choice
+    as an argument.
+    Random Number Generation: The code uses Math.random() and Math.floor() to generate a random index and select a
+    random choice for the computer.
+    Code Structure
+    The code is structured into several functions and event listeners:
+
+    Variable Declarations: The code declares variables to store the user's score, the computer's score, and references
+    to HTML elements.
+    genCompChoice Function: This function generates a random choice for the computer by selecting a random index from an
+    array of options (rock, paper, scissors).
+    drawGame Function: This function is called when the user and the computer make the same choice, resulting in a draw.
+    It updates the message element to display that the game was a draw and changes the background color to indicate a
+    draw.
+    showWinner Function: This function is called when there is a winner in the game. It takes three arguments: userWin
+    (a boolean indicating whether the user won), userChoice (the user's choice), and compChoice (the computer's choice).
+    It updates the scores, displays the outcome message, and changes the background color based on the result.
+    playGame Function: This function is called when the user selects a choice. It generates the computer's choice,
+    compares it with the user's choice, and determines the winner or if it's a draw. It calls the drawGame or showWinner
+    function accordingly.
+    Event Listeners: The code adds event listeners to each choice element. When a choice is clicked, it retrieves the
+    selected choice and calls the playGame function with the selected choice as an argument.
+</body>
+
+</html>
